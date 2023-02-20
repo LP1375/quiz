@@ -58,15 +58,6 @@ function App() {
         {answerText: 'Неймар', isCorrect: false},
         {answerText: 'Ді Марія', isCorrect: false},
       ]
-    },
-    {
-      questionText: 'Хто моя любима жопка?',
-      answerOptions: [
-        {answerText: 'Жопка', isCorrect: true},
-        {answerText: 'Пупс', isCorrect: true},
-        {answerText: 'Сонце', isCorrect: true},
-        {answerText: 'Точно не я', isCorrect: false},
-      ]
     }
   ]
 
@@ -94,9 +85,8 @@ function App() {
         showScore
           ? <div className="section_score">
               <div>
-                Правильних відповідей {score} з {questions.length}. <br /><br /> А тепер включи відео.
+                Правильних відповідей {score} з {questions.length}.
               </div>
-              <ReactPlayer url='https://www.youtube.com/watch?v=rnjbemXGNmw&ab_channel=%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%88%D0%B8%D1%81%D1%8C%D0%BD%D0%B0%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%91%D0%A0%D0%90%D0%A2%D0%92%D0%90%21' width='448px' height='283,5px' />
             </div>
           : <div className="quizz">
               <div className="question_section">
